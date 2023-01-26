@@ -10,9 +10,10 @@ except Exception as e:
     raise Exception(f'No se pudo importar su clase Solution de "solution.py", por favor recordar trabajar a partir del template. El error es: {e}')
 
 
+
 class TestSolution(unittest.TestCase):
 
-    #Pregunta 1
+    # Pregunta 1
     @weight(1.5)
     def test1(self):
         """Pregunta 1: creación de diccionario con set de datos 1"""
@@ -33,7 +34,7 @@ class TestSolution(unittest.TestCase):
         pokemones = stb.crear_diccionarios("pokemon2.csv")
         self.assertEqual(str(pokemones), pokemonesSol, f'Test fallido. Revisa la creación del diccionario')
 
-    #Pregunta 2
+    # Pregunta 2
     @weight(1)
     def test3(self):
         """Pregunta 2: Buscar dato de Pokémon inexistente con set de datos 1"""
@@ -44,7 +45,7 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(solution_result, "clear", f'No modifique la función sorted del template')
         prof = ProfessorSolution()
         pokemonesSol = prof.crear_diccionarios("pokemon1.csv")
-        solution_result = stb.buscar_dato_pokemon(pokemonesSol,20000,"habilidad")
+        solution_result = stb.buscar_dato_pokemon(pokemonesSol, 20000,"habilidad")
         self.assertEqual(solution_result, "Pokémon no encontrado", f'Test fallido. No obtuviste el dato correcto, revisa el método buscar_dato_pokemon.')
 
     @weight(1)
