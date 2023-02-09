@@ -1,10 +1,12 @@
+cant_notas = int(input("Cantidad de notas: "))
 suma = 0
-cantidad = 0
-for item in range(50,121,2):
-    print(item)
-    suma += item
-    cantidad+=1
+for index in range(cant_notas):
+    nota = float(input("Nota {}:".format(index + 1)))
+    while nota < 0:
+        nota = float(input("Nota {}:".format(index + 1)))
 
-print("La sumatoria de numeros pares es:",suma)
-print("La cantidad de elementos es:",cantidad)
-print("El promedio es {}".format(suma/cantidad))
+    suma += nota
+
+
+print("Sumatoria:", suma)
+print("El promedio es {}".format(suma/cant_notas))

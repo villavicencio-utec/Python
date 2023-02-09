@@ -1,3 +1,5 @@
 for i in range(5):
     print(i, "UTEC")
-    print(i * 4)
+    x = 7 + 8
+    if x > 10:
+        print(x)

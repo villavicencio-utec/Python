@@ -1,7 +1,8 @@
 # frase = input("Frase: ")
-frase = "Hola Mundo"
-for letra in frase:
-    print(letra)
+frase_1 = "Hola Mundo"
+for x in frase_1:
+    print(x)
+
 
 
 
