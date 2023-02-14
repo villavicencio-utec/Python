@@ -16,7 +16,7 @@ dic = {
 
 numero = int(input("Input: "))
 
-if numero>0 and numero <11:
+if 0 < numero < 11:
     print("Output: ", dic[numero])
 else:
     print("Numero fuera de rango")

@@ -10,11 +10,10 @@
 frase = input("Input: ")
 dic = {}
 frase = frase.lower()
-for palabra in frase.split(" "):
-        if palabra in dic:
-            dic[palabra]= dic[palabra]+1
-        else:
-            dic[palabra] = 1
+for palabra in frase.split(" "):  # Hola como estas Hola como estas Hola como estas
+    if palabra in dic:
+        dic[palabra] = dic[palabra] + 1
+    else:
+        dic[palabra] = 1
 
 print(dic)
-

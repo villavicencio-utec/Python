@@ -19,12 +19,12 @@
 # cada carácter de un string. Considere que su algoritmo debe considerar cualquier caracter
 # (letras, números, símbolos, etc.) excepto espacios en blanco.
 
-palabra = input("Input: ")  #aaabc
+palabra = input("Input: ")  #abc
 dic = {}
 palabra = palabra.lower()
 for letra in palabra:
     if letra != " ":
-        dic[letra] = palabra.count(letra)
+        dic[letra] = palabra.count(letra)  # dic["a"] = 1
 
 print(dic)
 
